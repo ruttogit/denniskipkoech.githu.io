@@ -1,0 +1,645 @@
+/*==========DEFAULT SETTINGS=======*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    font-family: Josefin Sans;
+    line-height: 1.7;
+    color: black;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+.cont{
+    width: 76%;/*large screens*/
+    margin: 0 auto;
+}
+section{
+    padding:  0;
+}
+section h2{
+    text-align: center;
+    margin-bottom: 64px;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5{
+  line-height: 19px;  
+}
+h1{
+    font-size: 1.2rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+    display: block;
+}
+h4{
+    font-size: 1.3rem
+}
+a{
+    color: black;
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.btn{
+    display: inline-block;
+    background: lightblue;
+    color: #ffffff;
+    padding: 1px solid  transparent;
+    font-weight: 500;
+
+}
+/*==========NAVIGATION SECTION=======*/
+.bar{
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+nav .button-nav{
+    position: relative;
+    top: 1px;
+    right: 1px;}
+nav .button-nav button{
+    display: none; 
+
+}
+nav .button-nav button i{
+    font-size: 35px;
+}
+
+/*NAVIGATION BAR*/
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 4px 10px #000000;
+    z-index: 1;
+    
+
+}
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-weight: 700;
+}
+.bar .top-bar a :nth-child(1){
+    font-family: Josefin Sans;
+    font-weight: 700;
+}
+nav .top-bar a span{
+    color: #2626c4;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li a{
+    justify-content: space-between;
+}
+nav ul li a:hover{
+    color: #2626c4;
+}
+/*==========HERO SECTION=======*/
+.hero{
+   margin: 0px 0px;
+   height: 400px;
+   padding: 100px;
+}
+
+.intro{
+    margin: 0 70px;
+    font-size: 27px;
+    font-family: Josefin Sans;
+    line-height: 30px;
+    font-weight: 700;
+    width: 30%;
+    border: 1px transparent #2626c4;
+    padding: 70px 70px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #000000;
+    
+}
+.intro:hover{
+    border: 1px solid #2626c4;
+}
+.hero span{
+    color: #2626c4;
+}
+.hero .intro button{
+    padding: 7px 12px;
+    color: #000000;
+    background: transparent;
+    border: 1px solid #2626c4;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.hero .intro button:hover{
+    background: rgb(247, 210, 210);
+    
+}
+.hero .intro button:active{
+    opacity: 0.5;
+    background: #2626c4;
+    color: #fff;
+}
+/*==========ABOUT SECTION=======*/
+.about-me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #c8d3e7;
+    border-radius: 10px;
+    margin: 50px;
+}
+.about-me .profile-img{
+    width: 500px;
+    border-radius: 10px;
+}
+.about-me .profile-img img{
+    height: 100%;
+    filter: saturate(0);
+    transition: 0.5s;
+    z-index: 100;
+}
+.about-me .profile-img img:hover{
+    filter: saturate(1);
+}
+.about{
+    margin-top: 200px;
+    margin-right: 50px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 250px;
+    padding: 100px 100px;
+    box-shadow: 0px 4px 10px black;
+    background: #ffffff;
+    transition: 0.3s;
+}
+.about:hover{
+    border: 1px solid #2626c4;
+}
+.about span{
+    color: #2626c4;
+}
+.about-me .about h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+.about-me .about p{
+    display: flex;
+    text-align: center;
+}
+#about h3{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+/*==========SSERVICES SECTION=======*/
+#skills h3{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+#skills h3 span{
+    color: #2626c4;
+}
+#skills{
+    margin-bottom: 100px;
+}
+.services-cards{
+    margin: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.services-cards, .card-1, .card-2 .card-3 h4, p{
+    text-align: center;
+
+}
+.card{
+    padding: 40px 20px;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px;
+    transition: 0.3s;
+}
+.card:hover{
+    border: 1px solid #2626c4;
+}
+.card h4{
+    margin-bottom: 30px;
+}
+.card img{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+/*==========CONTACT SECTION=======*/
+.contact{
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+section #contact-h3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+section #contact-h3 span{
+    color: #fff;
+}
+.contact form {
+    border-style: solid;
+}
+
+.contact-div form input,textarea{
+    border: 1.5px solid #2626c4;
+    display: block;
+    margin: 6px 0;
+    padding: 4px;
+    width: 300px;
+    border-radius: 2px;
+}
+.contact-div form input[type="text"]{
+    width: 143px;
+    display: inline-block;
+}
+.contact-div form a button{
+    width: 300px;
+    border: 1px solid #2626c4;
+    background: #2626c4;
+    padding: 10px 0;
+    color: #fff;
+    border-radius: 4px;
+    transform-origin: 1s;
+}
+.contact-div form a button:hover{
+    background: #fff;
+    color: #000000;
+}
+
+#f-name, #l-name{
+    display: inline-block;
+}
+.contact-div{
+    background: #535353;
+    margin: 0 auto;
+    height: 600px;
+    width: 98vw;
+    border-radius: 10px;
+}
+.contact .form-div{
+    width: 30vw;
+    margin-top: 10vh;
+    background: #cacaee;
+    padding: 20px 10px;
+}
+.contact .follow-us{
+    margin-top: 10vh;
+    background: #d6cdcd;
+    margin: 0 auto;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #ffffff;
+}
+.contact .follow-us a{
+    display: flex;
+    
+}
+.contact .follow-us h4{
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact .follow-us a i{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background: #2626c4;
+    border-radius: 50%;
+}
+.contact .follow-us a i:hover{
+    opacity: 0.7;
+}
+.contact .follow-us a i:active{
+    color: #000000;
+    background: #fff;
+}
+
+.copyright{
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright i{
+    color: #ffffff;
+}
+.copyright p{
+    color: #ffffff;
+}
+@media screen and (max-width: 1065px){
+    /*==========DEFAULT SETTINGS=======*/
+    body{
+        width: 100%;
+    }
+    h3{
+        font-size: 1rem;
+        display: block;
+    }
+    h1, 
+h2, 
+h3, 
+h4, 
+h5{
+  line-height: 15px;  
+}
+h1{
+    font-size: 2.0rem;
+}
+h2{
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 1.3rem;
+    display: block;
+}
+h4{
+    font-size: 1.1rem
+}
+    /*==========NAV SECTION=======*/
+    nav .button-nav button{
+        display: inline-block;
+        cursor: pointer;
+    }
+    nav .button-nav #close-nav{
+        display: none;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 3rem;
+        right: 2%;
+        height: fit-content;
+        width: 18rem;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        border-radius: 10px;
+        background-color: #2626c4;
+    }
+    .nav-menu li{
+        width: 100%;
+        height: 5.8rem;
+        
+    }
+    .nav-menu li a{
+        color: #fff;
+        font-size: 17px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-menu li a:hover{
+        color: rgb(194, 180, 180);
+        
+    }
+    nav .button-nav button i{
+        font-size: 26px;
+    }
+    
+    nav .button-nav{
+        top: 1px;
+        right: 6px;}
+     /*==========HERO SECTION=======*/
+    .hero{
+        height: 400px;
+        padding: 60px;
+     }
+     
+     .intro{
+         width: 50%;
+         font-size: 24px;
+         line-height: 27px;
+         padding: 40px;
+        }
+         /*==========ABOUT SECTOION=======*/
+    .about{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 100px;
+        margin-bottom: 60px;
+        height: auto;
+        width: auto;
+        padding: 30px;
+        box-shadow: 0px 4px 10px black;
+        background: #ffffff;
+    }
+    .about p{
+        padding: 10px;
+    }
+    .about-me{
+        grid-template-columns: 150px 1fr;
+       
+    }
+    
+    .about-me .profile-img img{
+        width: 200px;
+        height: auto;
+        
+    }
+    .about-me .about{
+        padding: 3px;
+    }
+    .about-me .about h3{
+        padding-bottom: 5px;
+    }
+    .about-me .about p{
+        display: block;
+        text-align: left;
+    }
+     /*==========SKILLS SECTION=======*/
+    #skills h3{
+        text-align: center;    
+        text-align: center;
+}
+    .services-cards{
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 250px 1fr;
+        gap: 60px;
+        margin-left: 20px;
+        padding: 0px;
+        width: auto;
+        margin: 0 auto;
+        padding-left: 10%;
+    }
+    .card{
+        width: 200px;
+        margin: 0px;
+        margin-left: 0;
+    }
+
+
+ /*==========CONTACT SECTIION=======*/
+
+    .contact-div{
+        background: #535353;
+        margin: 0 auto;
+        height: auto;
+    }
+    .contact{
+        margin: 70px 70px;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .contact{
+        gap: 30px  
+}
+section #contact-h3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+.contact-div form input,textarea{
+    border: 1.5px solid #2626c4;
+    margin: 6px 0;
+    padding: 4px;
+    width: 250px;
+    border-radius: 4px;
+}
+.contact-div form input[type="text"]{
+    width: 250px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.contact-div form a button{
+    width: 257px;
+    border: 1px solid #2626c4;
+    background: #2626c4;
+    padding: 10px 0;
+}
+.contact-div .form-div{
+    margin: 0 auto;
+    width: 250px;
+}
+.contact .follow-us{
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #ffffff;
+    width: 250px;
+    margin: 0 auto;
+}
+.nav-menu li a{
+    overflow: hidden;
+}
+}
+ /*==========MOBILE PHONES=======*/
+@media screen and (max-width: 630px){
+    body{
+        width: 100%;
+    }
+    nav .button-nav{
+        top: 1px;
+        right: 6px;}
+    nav .button-nav button i{
+        font-size: 24px;
+    }
+    
+
+     /*==========HERO SECTION=======*/
+    .hero{
+        height: auto;
+        width: 450px;
+        padding: 60px;
+     }
+     .intro{
+        width: 50%;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px;
+       }
+       /*==========ABOUT SECTION=======*/
+   .about{
+       margin-left: -20px;
+       margin-bottom: 10px;
+       height: auto;
+       width: 200px;
+       padding: 15px;
+   }
+   .about p{
+    padding: 7px;
+}
+    .about-me{
+    grid-template-columns: 150px 1fr;
+   
+}
+
+    .about-me .profile-img img{
+    width: 120px;
+    height: auto;
+    
+}
+/*==========SERVICES SECTION=======*/
+
+.services-cards{
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    padding: 0px;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+.card{
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+.contact-div h3{
+    margin-bottom: 20px;
+}
+.contact-div .contact{
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+}
